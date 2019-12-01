@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MusicPlayer.cs" />
+    <Compile Include="Assets\TestingGit.cs" />
     <None Include="Assets\epyphany\ReadMe.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Aviv/Desktop/Git/Unity-Projects/4_Argon_Assault/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
