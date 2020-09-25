@@ -486,8 +486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe4efba0e060884683335197a25eaf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Xspeed: 40
-  Yspeed: 40
+  Xspeed: 55
+  Yspeed: 55
   positionPitchFactor: -2.46
   controlPitchFactor: -5
 --- !u!108 &552748635
