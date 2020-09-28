@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44146505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 393, y: 0, z: 3249}
+  m_LocalPosition: {x: 456, y: 0, z: 3369}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1830605560}
@@ -265,7 +265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242453813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1230, y: 0, z: 2474}
+  m_LocalPosition: {x: 1525, y: 0, z: 2474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1830605560}
@@ -326,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 498171626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 55, y: 0, z: 1135}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70026, y: 0.70026, z: 0.70026}
   m_Children: []
   m_Father: {fileID: 1830605560}
   m_RootOrder: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circuitObject: {fileID: 1830605559}
   circuit: {fileID: 1830605559}
-  routeSpeed: 465.1
+  routeSpeed: 300
   lookAheadDistance: 100
   varyingSpeed: 0
   initialSpeed: 0
@@ -490,6 +490,8 @@ MonoBehaviour:
   Yspeed: 55
   positionPitchFactor: -2.46
   controlPitchFactor: -5
+  positionYawFactor: 5
+  controlRollFactor: 5
 --- !u!108 &552748635
 Light:
   m_ObjectHideFlags: 0
@@ -1040,7 +1042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830605558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 640, z: 0}
+  m_LocalPosition: {x: -43, y: 457, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1251959138}
