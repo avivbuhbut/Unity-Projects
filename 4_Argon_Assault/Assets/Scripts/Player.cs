@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         /*MOVING LEFT AND RIGHT:
          * change the x only of the  ship (to move left and right), z and y  stays as they are
          *Mathf.clamp is a method to restrict the movemnt of one of the axis, in that case its the x*/
-        transform.localPosition = new Vector3(Mathf.Clamp(rawNewXPos, -10f, 10f), transform.localPosition.y, transform.localPosition.z);
+        transform.localPosition = new Vector3(Mathf.Clamp(rawNewXPos, -30f, 30f), transform.localPosition.y, transform.localPosition.z);
 
         /*Moving Up and Down*/
 
@@ -64,6 +64,6 @@ public class Player : MonoBehaviour
 
         float rawNewYPos = transform.localPosition.y + yOffset;
 
-        transform.localPosition = new Vector3(transform.localPosition.x, Mathf.Clamp(rawNewYPos, -10f, 10f), transform.localPosition.z);
+        transform.localPosition = new Vector3(transform.localPosition.x, Mathf.Clamp(rawNewYPos, -20f, 20f), transform.localPosition.z);
     }
 }
