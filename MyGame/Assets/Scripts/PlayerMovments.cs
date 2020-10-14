@@ -14,7 +14,6 @@ public class PlayerMovments : MonoBehaviour
     public float moveSpeed = 5f;
     public float hitPoints = 100f;
     private Rigidbody2D rb;
-    public ScObWeapon currentWeapon;
 
     void Awake()
     {

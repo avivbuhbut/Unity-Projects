@@ -138,9 +138,8 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Bullet1.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
-    <Compile Include="Assets\Scripts\PlayerFire.cs" />
     <Compile Include="Assets\Scripts\PlayerMovments.cs" />
-    <Compile Include="Assets\Scripts\ScObWeapon.cs" />
+    <Compile Include="Assets\Scripts\ShootScript.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Aviv/Desktop/Git/Unity-Projects/MyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
