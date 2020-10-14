@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{9FFA8360-0BBF-7AA7-0617-18280CA03E00}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerFire.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerFire.cs" Line="90" Column="1" />
+      <File FileName="Assets/Scripts/Bullet1.cs" Line="5" Column="21" />
+      <File FileName="Assets/Scripts/FollowCamera.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="caceb258-55cc-49fc-b6fa-b16739b270a3" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
