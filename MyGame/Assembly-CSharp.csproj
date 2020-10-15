@@ -128,6 +128,14 @@
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\PlayerProfile.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\Singleton.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\ZeroCounter.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\CharSwitch.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Demoman_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Heavy_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Scout_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Sniper_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Soldier_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Spy_Move.cs" />
+    <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -140,6 +148,8 @@
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerMovments.cs" />
     <Compile Include="Assets\Scripts\ShootScript.cs" />
+    <None Include="Assets\MainAsset\DemoScene\Read Me.txt" />
+    <None Include="Assets\MainAsset\READ ME.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Aviv/Desktop/Git/Unity-Projects/MyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
