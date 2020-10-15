@@ -128,6 +128,7 @@
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\PlayerProfile.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\Singleton.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\ZeroCounter.cs" />
+    <Compile Include="Assets\FlipAcourdMouse.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\CharSwitch.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Demoman_Move.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Heavy_Move.cs" />
@@ -146,8 +147,11 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+    <Compile Include="Assets\Scripts\gunShooting.cs" />
+    <Compile Include="Assets\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovments.cs" />
     <Compile Include="Assets\Scripts\ShootScript.cs" />
+    <Compile Include="Assets\Scripts\weaponAimNShoot.cs" />
     <None Include="Assets\MainAsset\DemoScene\Read Me.txt" />
     <None Include="Assets\MainAsset\READ ME.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
