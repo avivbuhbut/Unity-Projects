@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerMovments : MonoBehaviour
 {
@@ -12,8 +13,18 @@ public class PlayerMovments : MonoBehaviour
     Rigidbody2D rigidbody2d;
 
     public float moveSpeed = 5f;
-    public float hitPoints = 100f;
+    //public float hitPoints = 100f;
     private Rigidbody2D rb;
+
+    public GameObject bulletToRight, bulletToLeft;
+    Vector2 bulletPos;
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
+    
+
+
+    
+
 
     void Awake()
     {
@@ -52,7 +63,36 @@ public class PlayerMovments : MonoBehaviour
             FixedUpdate();
 
 
-           
-
+        
+          if(Input.GetButton("Fire1") && Time.time > nextFire )
+        {
+            nextFire = Time.time + fireRate;
+            fire();
         }
+
+       
     }
+
+
+
+    
+
+     void fire()
+    {
+
+ 
+        bulletPos = transform.position;
+        if (transform.localScale.x > 0) // means the player is facing rihgt
+        {
+            bulletPos += new Vector2(+1f, -0.43f);
+            Instantiate(bulletToRight, bulletPos, Quaternion.identity);
+        }
+        else
+        {
+            bulletPos += new Vector2(-1f, -0.43f);
+            Instantiate(bulletToLeft, bulletPos, Quaternion.identity);
+        }
+
+        
+    }
+}
