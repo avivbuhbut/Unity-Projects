@@ -128,7 +128,6 @@
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\PlayerProfile.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\Singleton.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\Utils\ZeroCounter.cs" />
-    <Compile Include="Assets\FlipAcourdMouse.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\CharSwitch.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Demoman_Move.cs" />
     <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement Scripts\PlayerScripts\Heavy_Move.cs" />
@@ -146,12 +145,14 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
+    <Compile Include="Assets\Scripts\fire.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+    <Compile Include="Assets\Scripts\gunRotation.cs" />
     <Compile Include="Assets\Scripts\gunShooting.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovments.cs" />
-    <Compile Include="Assets\Scripts\ShootScript.cs" />
-    <Compile Include="Assets\Scripts\weaponAimNShoot.cs" />
+    <Compile Include="Assets\Scripts\Shooter.cs" />
+    <Compile Include="Assets\Scripts\WeaponAimNShoot.cs" />
     <None Include="Assets\MainAsset\DemoScene\Read Me.txt" />
     <None Include="Assets\MainAsset\READ ME.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
@@ -406,6 +407,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/Aviv/Desktop/Git/Unity-Projects/MyGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>/Users/Aviv/Desktop/Git/Unity-Projects/MyGame/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -772,6 +776,18 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{5F09F7A1-975A-D590-FB94-F41BC22D4455}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{630F5102-B4FC-AE2D-247C-C345765A02C3}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{FBE48A15-3AB5-5C3E-B42B-E7A45C55952B}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{D3858CC0-4B3A-C879-F032-58DDD21EB719}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

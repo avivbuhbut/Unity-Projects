@@ -2,31 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class weaponAimNShoot : MonoBehaviour
-
-   
+public class WeaponAimNShoot : MonoBehaviour
 {
 
 
-    [SerializeField]
-    private Transform WeaponTip;
+    public float bulletVelocity = 5f;
 
-    [SerializeField]
-    private GameObject bullet;
-
-    private Vector2 lookDirection;
-
-    private float lookAngle;
-
-
+    public GameObject bullet1;
     Camera myCamera;
-    public Camera m_CameraTwo;
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
 
-        GameObject cameraObject = GameObject.Find("Camera1");
-         myCamera = cameraObject.GetComponent<Camera>();
+        GameObject cameraObject = GameObject.Find("Camera1"); // change for the name of the tag of the camera
+        myCamera = cameraObject.GetComponent<Camera>();
         Vector2 mousePosition =
                         new Vector2(myCamera.ScreenToWorldPoint(Input.mousePosition).x,
                         myCamera.ScreenToWorldPoint(Input.mousePosition).y);
@@ -35,28 +24,18 @@ public class weaponAimNShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lookDirection = myCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
-
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
-            FireBullet();
+            Vector3 worldMousePos = myCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 direction = (Vector2)((worldMousePos - transform.position));
+            direction.Normalize();
+            // Creates the bullet locally
+            GameObject bullet = (GameObject)Instantiate(
+                                    bullet1,
+                                    transform.position + (Vector3)(direction * 0.5f),
+                                    Quaternion.identity);
+            // Adds velocity to the bullet
+            bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletVelocity;
         }
-
-
     }
-
-
-    private void FireBullet()
-    {
-        GameObject firedBullet = Instantiate(bullet, WeaponTip.position, WeaponTip.rotation);
-        firedBullet.GetComponent<Rigidbody2D>().velocity = WeaponTip.up *10f;
 }
-
-
-
-
-}
-
-
