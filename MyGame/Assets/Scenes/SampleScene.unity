@@ -5362,9 +5362,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 353599890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca4be59d8e3b47288fee8d979dd3285, type: 3}
+  m_Script: {fileID: 11500000, guid: 4efcb19246f454c508807b00224cba0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveSpeed: 2
+  _attackDamage: 0
+  _lifePoints: 0
+  _attackRadius: 0
+  _followRadius: 100
+  playerTransform: {fileID: 1070302346}
 --- !u!82 &353599892
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11533,12 +11539,12 @@ PrefabInstance:
     - target: {fileID: 913847589400146214, guid: ad3b26fafa8ed438c85b59b975867f96,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 913847589400146214, guid: ad3b26fafa8ed438c85b59b975867f96,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 913847589400146214, guid: ad3b26fafa8ed438c85b59b975867f96,
         type: 3}
@@ -13245,7 +13251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSpeed: 8
-  speed: 2
+  speed: 6
   moveSpeed: 20
 --- !u!114 &1070302350
 MonoBehaviour:

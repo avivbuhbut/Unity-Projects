@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Enemie2move : Enemies
+public class Enemy2move : Enemies2
 {
 
     //variables
@@ -13,7 +13,7 @@ public class Enemie2move : Enemies
     public float _followRadius;
     //end
     [SerializeField] Transform playerTransform;
-    [SerializeField] Animator enemyAnim;
+ 
     SpriteRenderer enemySR;
 
     void Start()
@@ -21,7 +21,7 @@ public class Enemie2move : Enemies
         //get the player transform   
         playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
         //enemy animation and sprite renderer 
-        enemyAnim = gameObject.GetComponent<Animator>();
+   
         enemySR = GetComponent<SpriteRenderer>();
         //set the variables
         setMoveSpeed(_moveSpeed);
@@ -43,15 +43,15 @@ public class Enemie2move : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
+             
                 }
                 else
                 {
                     this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                
                     //walk
-                    enemyAnim.SetBool("Walking", true);
+           
                     enemySR.flipX = true;
                 }
 
@@ -62,15 +62,15 @@ public class Enemie2move : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
+                   
                 }
                 else
                 {
                     this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                 
                     //walk
-                    enemyAnim.SetBool("Walking", true);
+                 
                     enemySR.flipX = false;
                 }
 
@@ -79,7 +79,7 @@ public class Enemie2move : Enemies
         }
         else
         {
-            enemyAnim.SetBool("Walking", false);
+          
         }
 
 

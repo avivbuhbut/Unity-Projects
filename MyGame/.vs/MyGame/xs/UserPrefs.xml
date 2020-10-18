@@ -1,10 +1,8 @@
 ﻿<Properties StartupConfiguration="{9FFA8360-0BBF-7AA7-0617-18280CA03E00}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy2move.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemies2.cs">
     <Files>
       <File FileName="Assets/Scripts/bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemie2.cs" Line="12" Column="15" />
-      <File FileName="Assets/Scripts/Enemie2move.cs" Line="3" Column="24" />
-      <File FileName="Assets/Scripts/Enemy2move.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/Enemies2.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
