@@ -35,9 +35,9 @@ public class PlayerMovments : MonoBehaviour
         {
 
             //Moving Left And RIgh
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.A))
                 rigidbody2d.velocity = new Vector2(speed * -1, rigidbody2d.velocity.y);
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.D))
                 rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
 
             /*JUMPING*/
