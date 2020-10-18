@@ -5365,12 +5365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca4be59d8e3b47288fee8d979dd3285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 20
-  _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 100
-  _followRadius: 100
-  playerTransform: {fileID: 1070302346}
 --- !u!82 &353599892
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26824,6 +26818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829616106600923683, guid: ad3b26fafa8ed438c85b59b975867f96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7407145164162085435, guid: ad3b26fafa8ed438c85b59b975867f96,
         type: 3}
