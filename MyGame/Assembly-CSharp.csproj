@@ -147,7 +147,9 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
+    <Compile Include="Assets\Scripts\BulletHitEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemies2.cs" />
+    <Compile Include="Assets\Scripts\EnemieScript.cs" />
     <Compile Include="Assets\Scripts\Enemy2move.cs" />
     <Compile Include="Assets\Scripts\fire.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />

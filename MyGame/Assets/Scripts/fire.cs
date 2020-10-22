@@ -6,11 +6,16 @@ public class fire : MonoBehaviour
 {
 
 
+    GameObject other;
+    GameObject EnemieNew;
+    GameObject heavyBullet1;
+
     public float firespeed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        EnemieNew = GameObject.Find("EnemieNew");
+        heavyBullet1 = GameObject.Find("Heavy_Bullet1");
     }
 
     // Update is called once per frame
@@ -20,8 +25,20 @@ public class fire : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject, 7f);
+        Debug.Log("HITTT");
+        if (other.name == "EnemieNew")
+        {
+            
+            Destroy(EnemieNew, 2f);
+            Destroy(heavyBullet1, 2f);
+            // playerCollides with the Enemy
+
+        }
     }
+
+
+
 }
